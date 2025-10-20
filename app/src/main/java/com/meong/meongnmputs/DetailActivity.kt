@@ -16,5 +16,18 @@ class DetailActivity : AppCompatActivity() {
         binding=ActivityDetailBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val nama = intent.getStringExtra("nama")
+        val nrp = intent.getStringExtra("nrp")
+        val aboutMe = intent.getStringExtra("aboutMe")
+        val myCourse = intent.getStringExtra("myCourse")
+        val myExperience = intent.getStringExtra("myExperience")
+        val prodi = intent.getStringExtra("prodi")
+        val imageId = intent.getIntExtra("imageId", 0)
+
+        binding.txtNama.text = nama
+        binding.txtNrp.text = "NRP :\t" + nrp
+        binding.gbrMhs.setImageResource(imageId)
+        //binding.imgMhsDtl.sourceLayoutResId = R.drawable
+
     }
 }

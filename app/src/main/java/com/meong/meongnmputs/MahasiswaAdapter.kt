@@ -5,7 +5,9 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.meong.meongnmputs.databinding.MhsCardBinding
 
-class MahasiswaAdapter(): RecyclerView.Adapter<MahasiswaAdapter.MahasiswaViewHolder>() {
+class MahasiswaAdapter(private val onItemClick: (Mahasiswa) -> Unit): RecyclerView.Adapter<MahasiswaAdapter.MahasiswaViewHolder>()
+    {
+
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
@@ -24,6 +26,11 @@ class MahasiswaAdapter(): RecyclerView.Adapter<MahasiswaAdapter.MahasiswaViewHol
         holder.binding.txtNamaMhs.text = UserData.dataMahasiswa[position].nama
         holder.binding.txtDetailMhs.text = "NRP :\t" + UserData.dataMahasiswa[position].nrp + "\nPRODI :\t" +
                 UserData.dataMahasiswa[position].prodi
+
+        val mahasiswanya = UserData.dataMahasiswa[position]
+        holder.binding.root.setOnClickListener {
+            onItemClick(mahasiswanya)
+        }
 
     }
 

@@ -1,5 +1,6 @@
 package com.meong.meongnmputs
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import androidx.activity.enableEdgeToEdge
@@ -18,6 +19,17 @@ class ListMhsActivity : AppCompatActivity() {
 
         binding.recMhs.layoutManager = LinearLayoutManager(this)
         binding.recMhs.setHasFixedSize(true)
-        binding.recMhs.adapter = MahasiswaAdapter()
+
+        binding.recMhs.adapter = MahasiswaAdapter{ mahasiswa->
+            val intent = Intent(this, DetailActivity::class.java)
+            intent.putExtra("nama", mahasiswa.nama)
+            intent.putExtra("nrp", mahasiswa.nrp)
+            intent.putExtra("aboutMe", mahasiswa.aboutMe)
+            intent.putExtra("myCourse", mahasiswa.myCourse)
+            intent.putExtra("myExperience", mahasiswa.myExperience)
+            intent.putExtra("prodi", mahasiswa.prodi)
+            intent.putExtra("imageId", mahasiswa.imageId)
+            startActivity(intent)
+        }
     }
 }
