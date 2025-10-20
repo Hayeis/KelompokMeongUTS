@@ -1,7 +1,7 @@
 package com.meong.meongnmputs
 
-object userData {
-    var mahasiswa = arrayOf(
+object UserData {
+    var dataMahasiswa:Array<Mahasiswa> = arrayOf(
         Mahasiswa(
             "Santi Mutiara",
             "160423019",
@@ -9,7 +9,7 @@ object userData {
             "DSAI - Applied Multivariate Analysiss",
             "Magang di decoding 2019-2020",
             Mahasiswa.prodi[0],
-            R.drawable.Santi
+            R.drawable.santi
         ),
 
         Mahasiswa(
@@ -19,7 +19,7 @@ object userData {
             "Mobile App Development",
             "Magang di Google Developer Student Club 2020-2021",
             Mahasiswa.prodi[1],
-            2
+            R.drawable.andi_saputra
         ),
         Mahasiswa(
             "Dewi Larasati",
@@ -28,7 +28,7 @@ object userData {
             "Data Visualization and Analytics",
             "Magang di BPS (Badan Pusat Statistik) 2021",
             Mahasiswa.prodi[3],
-            3
+            R.drawable.dewi
         ),
         Mahasiswa(
             "Rafi Alfarizi",
@@ -37,7 +37,7 @@ object userData {
             "Predictive Analytics",
             "Magang di Tokopedia Data Science Division 2022",
             Mahasiswa.prodi[0],
-            4
+            R.drawable.rafi
         ),
         Mahasiswa(
             "Clara Natalia",
@@ -46,7 +46,7 @@ object userData {
             "UI/UX Design Fundamentals",
             "Magang di Shopee Product Design 2022-2023",
             Mahasiswa.prodi[4],
-            5
+            R.drawable.clara
         ),
         Mahasiswa(
             "Joko Prasetyo",
@@ -55,7 +55,7 @@ object userData {
             "Database and Backend Engineering",
             "Magang di Telkom Indonesia Data Infrastructure 2023",
             Mahasiswa.prodi[2],
-            R.drawable.Joko
+            R.drawable.joko
         )
     )
 }

@@ -12,11 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MeongNMPUTS">
         <activity
-            android:name=".UserAdapterActivity"
-            android:exported="false" />
-        <activity
-            android:name=".FriendRequestActivity"
-            android:exported="false">
+            android:name=".ListMhsActivity"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,10 +21,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".DetailActivity"
-            android:exported="false" />
+            android:name=".FriendRequestActivity"
+            android:exported="true">
+        </activity>
         <activity
-            android:name=".ListMhsActivity"
+            android:name=".DetailActivity"
             android:exported="false" />
 
         <meta-data
