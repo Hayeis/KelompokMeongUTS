@@ -14,7 +14,7 @@
         android:layout_height="0dp"
         app:cardCornerRadius="10dp"
         app:cardElevation="5dp"
-        app:layout_constraintBottom_toTopOf="@+id/spinner_detail"
+        app:layout_constraintBottom_toTopOf="@+id/spinDetail"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
@@ -49,7 +49,6 @@
                     android:id="@+id/txtNrp"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:layout_gravity="start"
                     android:layout_margin="10dp"
                     android:layout_weight="1"
                     android:fontFamily="@font/alkatra_medium"
@@ -104,10 +103,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.05"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner_detail" />
+        app:layout_constraintTop_toBottomOf="@+id/spinDetail" />
 
     <Spinner
-        android:id="@+id/spinner_detail"
+        android:id="@+id/spinDetail"
         android:layout_width="370dp"
         android:layout_height="54dp"
         android:layout_marginTop="23dp"
@@ -169,15 +168,28 @@
 
     <Button
         android:id="@+id/btnAddFriend"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
+        android:layout_width="150dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="204dp"
         android:layout_marginBottom="36dp"
-        android:background="#4CAF50"
+        android:backgroundTint="@android:color/holo_blue_dark"
         android:text="Request Friend"
-        android:textColorLink="#4CAF50"
-        app:cornerRadius="10dp"
+        android:textColorLink="@android:color/holo_green_dark"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.951"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDetail" />
+
+    <TextView
+        android:id="@+id/txtDetail"
+        android:layout_width="283dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinDetail" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
