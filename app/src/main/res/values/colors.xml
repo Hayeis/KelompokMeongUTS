@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="md_theme_primary">#8E4B62</color>
+    <color name="md_theme_onPrimary">#FFFFFF</color>
+    <color name="md_theme_primaryContainer">#FFD9E2</color>
+    <color name="md_theme_onPrimaryContainer">#3A071F</color>
+
+    <color name="md_theme_secondary">#74565F</color>
+    <color name="md_theme_onSecondary">#FFFFFF</color>
+    <color name="md_theme_secondaryContainer">#FFD9E2</color>
+    <color name="md_theme_onSecondaryContainer">#2B151B</color>
+
+    <color name="md_theme_background">#FFFFFF</color>
+    <color name="md_theme_onBackground">#1D1B20</color>
+    <color name="md_theme_surface">#FFFFFF</color>
+    <color name="md_theme_onSurface">#1D1B20</color>
+    <color name="md_theme_surfaceVariant">#F3DDE3</color>
+    <color name="md_theme_onSurfaceVariant">#524347</color>
+
+    <color name="md_theme_outline">#857378</color>
 </resources>
