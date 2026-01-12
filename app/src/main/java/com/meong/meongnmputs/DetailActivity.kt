@@ -45,10 +45,14 @@ class DetailActivity : AppCompatActivity() {
             AlertDialog.Builder(this)
                 .setTitle("FRIEND REQUEST")
                 .setMessage("Anda Telah Berhasil menambahkan " + nama + " sebagai teman.\nTeman anda sekarang adalah " + jumlahFriend)
+                .setPositiveButton("OK") { dialog, _ ->
+                    dialog.dismiss()
+                }
+                .show()
 
             binding.btnAddFriend.backgroundTintList = ColorStateList.valueOf(Color.GREEN)
-
             binding.btnAddFriend.text = "FRIEND"
+
         }
 
         binding.spinDetail.onItemSelectedListener = object : AdapterView.OnItemSelectedListener{
