@@ -9,7 +9,7 @@ android {
     compileSdk = 36
 
     buildFeatures{
-        viewBinding=true
+        viewBinding = true
     }
 
     defaultConfig {
@@ -45,10 +45,12 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
+    implementation("com.squareup.picasso:picasso:2.8")
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
     implementation(libs.androidx.recyclerview)
     implementation(libs.androidx.cardview)
+    implementation(libs.volley)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

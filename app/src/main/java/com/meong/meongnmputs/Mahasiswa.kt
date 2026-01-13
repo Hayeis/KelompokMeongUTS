@@ -7,7 +7,8 @@ data class Mahasiswa(
     var myCourse: String,
     var myExperience: String,
     var prodi: String,
-    var imageId: Int
+    var imageId: Int,
+    var photoUrl: String
 
 ){
     companion object {

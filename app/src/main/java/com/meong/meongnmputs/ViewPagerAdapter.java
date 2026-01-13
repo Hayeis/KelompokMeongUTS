@@ -1,5 +1,5 @@
 package com.meong.meongnmputs;
-
+/*
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
@@ -10,9 +10,11 @@ public class ViewPagerAdapter {val activity:AppCompatActivity,val fragments:Arra
         return fragments.size
     }
 
-    override fun createFragment(position: Int): Fragment {
+    //override fun createFragment(position: Int): Fragment {
         return fragments[position]
     }
 }
 
 }
+8
+ */
