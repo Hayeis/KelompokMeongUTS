@@ -33,7 +33,6 @@ class MahasiswaAdapter(private val onItemClick: (Mahasiswa) -> Unit): RecyclerVi
         }
 
     }
-
     override fun getItemCount(): Int {
         return UserData.dataMahasiswa.size
     }

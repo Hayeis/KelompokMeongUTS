@@ -26,7 +26,6 @@ class DetailActivity : AppCompatActivity() {
         binding=ActivityDetailBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        //Ambil data-data
         val nama = intent.getStringExtra("nama")
         val nrp = intent.getStringExtra("nrp")
         val aboutMe = intent.getStringExtra("aboutMe")
