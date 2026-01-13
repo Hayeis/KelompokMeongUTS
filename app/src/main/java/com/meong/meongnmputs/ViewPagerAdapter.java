@@ -1,7 +1,6 @@
 package com.meong.meongnmputs;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
 public class ViewPagerAdapter {val activity:AppCompatActivity,val fragments:ArrayList<Fragment>):FragmentStateAdapter(activity){
